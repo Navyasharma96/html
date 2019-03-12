@@ -1,12 +1,62 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
 <head>
+<title>
+</title>
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box;}
+  body{
+  background-color:rgba(0,0,0,1);
+  }
+    header {
+      text-align: center;
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color:dimgrey;
+    }
+    h1 {
+	 font-family: 'Londrina Shadow', cursive;
+      font-size: 70px;
+    }
+    
+    }
+	ul{}
+    .nav {
+      padding: 10px;
+      background:mistyrose;
+	  margin:0px 175px 0px 175px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+	  text-color:red;
+    }
+	li:hover{
+	font-size:20px;
+	font-color:blue;
+	}
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+	* {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;}
+img {vertical-align: middle;
+	}
 
 /* Slideshow container */
 .slideshow-container {
@@ -72,31 +122,39 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
 </style>
-</head>
 <body>
 
-<h2>Automatic Slideshow</h2>
-<p>Change image every 2 seconds:</p>
-
+<header>
+<h1>EDUCATION AND CAREER</h1>
+<ul class="nav">
+      <li><a href="E:\html\about.html" style="text-decoration: none"><b>About Us</b></a></li>
+      <li><a href="E:\html\rate.html" style="text-decoration: none"><b>Rate Us</b></a></li>
+      <li><a href="#" style="text-decoration: none"><b>Courses</b></a></li>
+	  <li><a href="#" style="text-decoration: none"><b>University</b></a></li>
+	  <li><a href="E:\html\Registration.html" style="text-decoration:none"><b>Registration Form</b></a></li>
+	  <li><a href="#" style="text-decoration:none"><b>Login</b></a></li>
+    </ul>
+  </header>
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="E:\html\jar.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <img src="E:\html\images1.jpeg" style="width:100%" height="350px" width="200px">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="E:\html\IMG_9759.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <img src="E:\html\option.jpg" style="width:100%"height="350px" width="200px">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="E:\html\IMG_9774.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <img src="E:\html\confiuse.jpg" style="width:100%"height="350px" width="200px">
+  <div class="text"></div>
 </div>
 
 </div>
@@ -131,4 +189,3 @@ function showSlides() {
 </script>
 
 </body>
-</html> 

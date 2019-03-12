@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <head>
+<link href="/normalize.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <title>Registraion Form
 </title>
 <style>
@@ -10,41 +12,42 @@ width:100px;
 
 }
 header{
+ font-family: helvetica, sans-serif;
+     font-size:40px;
      text-align: center;
-	 color:black;
-    }
-h1
-    {
-     font-size:75px;
+	 color:dimgray;
+	 
     }
 form{
-		padding-top:10px;
-        padding-bottom:10px;
-        padding-left:10px;
-        padding-right:10px;
-		margin-top:10px;
-		margin-bottom:10px;
-		margin-left:10px;
-		margin-right:10px;
+		padding:10px 10px 10px 10px;
+		margin:10px 10px 10px 10px;
 		font-size:25px;
 		color:black;	
 	}
 input 
     {
       border: 0;
-      padding: 10px;
+      padding: 10px 10px 10px 10px;
       font-size: 18px;
-	  
+	  font-weight:50px;
+	  width:200px;
     }	
+	date{
+	 padding:10px;
+	 font-size:18px;
+	}
 body{
-      background-image:url("sun.jpg");
+      background-image:url("Bengaluru.jpg");
+	  background-attachment:fixed;
       background-color:rgba(0,0,0,1);
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
+	  margin:0 auto;
     }
 input[type="submit"] 
 	{
+	 width:100px;
       color:white;
 	 background:red;
     }
@@ -54,22 +57,62 @@ input[type="submit"]
      font-size: 50px;
      margin-top: 20px;
      line-height: 40px;
+    } 
+	header {
+      text-align: center;
+      background-size: cover;
+      color: white;
     }
+	}
+	.topnav{
+	 overflow:hidden;
+	 background-color:black;
+	 position: fixed;
+	 z-index:1;
+	 top:0;
+	 width:100%;
+	}
+	.topnav a{
+     float:center;
+     color:white;
+	 text-align:center;
+	 padding:14px 16px;
+	 font-size:25px;
+	 text-decoration:none;
+	}
+	.topnav a:hover{
+	 background-color:green;
+	 color:black;
+	}
+	.topnav active{
+	}
+	
 </style>
 </head>
 <body>
-<img src="E:\html\clogo.png">
+<center>
+<div class="topnav">
+<div class="active">
+  <a href="E:\html\about.html">About us</a>
+  <a href="#Rate us">Rate us</a>
+  <a href="#course">Courses</a>
+  <a href="#university">University</a>
+  <a href="#registration">Regstration Form</a>
+  <a href="#">Login </a>
+  </div>
+  </div>
+  </center>
 <header>
 
 <h1>Registraion Form</h1>
 </header>
 <center>
-<form>
+<form method="post" action="">
 Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="text" placeholder="name" required><br><br>
   Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="number" placeholder="ph.no" required><br><br>
-  DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="date" placeholder="DOB" required><br><br>
 Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="text" placeholder="Address" requrid>
@@ -79,11 +122,12 @@ Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="password" placeholder="password" required><br><br>
   Interest:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" placeholder="Interest" required><br>
+  <input type="text" placeholder="Interest" required><br><br>
   </center>
   <center>
- &nbsp;&nbsp;&nbsp;
-    <input type="submit">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="E:\html\payment.html"> <input type="submit"></a>
 	</center>
+	
 </form>
 </body>

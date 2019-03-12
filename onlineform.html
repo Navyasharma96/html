@@ -4,28 +4,40 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <title>online form</title>
 <style>
-form{font-family: 'Roboto', sans-serif;}
-body{background-color:pink;
-padding:10px;}
+form{font-family: 'Roboto', sans-serif;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;}
+body{
+background-image:
+url("IMG_9774.jpg");
+background-color:pink;
+border:1px solid black;
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+height:900px;
+}
 </style>
 </head>
 <body>
-<form  method="post" action="/f.html" >
-First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required><br><br>
-Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname" required><br><br>
-Gender&nbsp;&nbsp;
-<label for="male">Male</label><input type="radio" name="gender" id="male" value="male">
-<label for="female">Female</label><input type="radio" name="gender" id="female" value="femalemale">
-<label for="others">Other</label><input type="radio" name="gender" id="other" value="other"><br><br>
-Father's Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fathername" required><br><br>
-Mother's Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mothername" required><br><br>
-Create Password:&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="newpassword" required><br><br>
-Date Of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="DoB" required><br><br>
-Email ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required><br><br>
-Phone No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ph.no" required><br><br>
-Education<br>
-<input type="checkbox" name="10th" value=""10th">10th<br>
-<input type="checkbox" name="12th" value="12thth">12thth<br>
+<form  method="post" action="\f.html" >
+<b>First Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required><br><br>
+<b>Last Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname" required><br><br>
+<b>Gender</b>&nbsp;&nbsp;
+<label for="male">Male</label><input type="radio" name="gender" id="male" value="male" required>
+<label for="female">Female</label><input type="radio" name="gender" id="female" value="femalemale"required>
+<label for="others">Other</label><input type="radio" name="gender" id="other" value="other" required><br><br>
+<b>Father's Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fathername" required><br><br>
+<b>Mother's Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mothername" required><br><br>
+<b>Create Password:</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="newpassword" required><br><br>
+<b>Date Of Birth:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="DoB" required><br><br>
+<b>Email ID:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required><br><br>
+<b>Phone No:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ph.no" required><br><br>
+<b>Education</b><br>
+<input type="checkbox" name="10th" value="10th">10th<br>
+<input type="checkbox" name="12th" value="12th">12thth<br>
 <input type="checkbox" name="graguation" value="graguation">Graturation<br>
 <input type="checkbox" name="postgraguation" value="postgraguation">Postgragution<br><br>
 <input type="Submit" Value="submit" action="/new.html">

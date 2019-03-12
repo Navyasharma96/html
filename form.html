@@ -1,23 +1,99 @@
 <DOCTYPE!HTML>
 <html>
-<head><h1 style="color:red;margin-left:30px">ONLINE PAGE</h1>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<center><h1 style="color:white;">ONLINE FORM</center></h1>
 <title>online form</title>
+<style>
+body{background-image:url(IMG_9759.jpg);
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+height:900px;}
+body{background-color:F0F0F0}
+table,td{
+width:1300px;
+height:50px;
+font-family: 'Roboto', sans-serif;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;}
+input[type="submit"]{
+background:blue;
+color:white;}
+</style>
 </head>
 <body>
-<form  method="post" action="/f.html" >
-First Name:&nbsp;<input type="text" name="fname" required><br><br>
-Last Name:&nbsp;<input type="text" name="lname" required><br><br>
-GENDER<br>
-<label for="male">MALE</label><input type="radio" name="gender" id="male" value="male"><br>
-<label for="female">FEMALE</label><input type="radio" name="gender" id="female" value="femalemale"><br>
-<label for="others">OTHER</label><input type="radio" name="gender" id="other" value="other"><br>
-Father's Name:&nbsp;<input type="text" name="fathername" required><br><br>
-Mother's Name:&nbsp;<input type="text" name="mothername" required><br><br>
-Create Password:&nbsp;<input type="password" name="newpassword" required><br><br>
-DOB:&nbsp;<input type="date" name="DoB" required><br><br>
-Email:&nbsp;<input type="email" name="email" required><br><br>
-Phone No:&nbsp;<input type="number" name="ph.no" required><br><br>
+<table>
+<tr>
+<center><form  method="post" action="/f.html" >
+<td>
+<b>First Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required>
+</td>
+<br><br>
+<td>
+<b>Middle Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mname">
+</td>
+<br><br>
+<td>
+<b>Last Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname" required>
+</td>
+</tr>
+<tr>
+<td><b>GENDER</b></td><td><label for="male"><b>MALE</b></label><input type="radio" name="gender" id="male" value="male"required>
+</td>
+<td>
+<label for="female"><b>FEMALE</b></label><input type="radio" name="gender" id="female" value="femalemale" required>
+</td>
+<td>
+<label for="others"><b>OTHER</b></label><input type="radio" name="gender" id="other" value="other" required>
+</td>
+</tr>
+<tr>
+<td>
+<b>Father's Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fathername" required>
+</td><br><br>
+<td>
+<b>Mother's Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mothername" required>
+</td>
+</tr>
+<tr>
+<td>
+<b>Create Password:</b>&nbsp;<input type="password" name="newpassword" required>
+</td>
+<td>
+<b>Confirm Password:</b>&nbsp;<input type="password" name="reenterpassword" required>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<b>DOB:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="date" name="DoB" required>
+</td>
+<td>
+<b>Email:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="email" name="email" required>
+</td>
+</tr>
+<tr>
+<td>
+<b>Mobile No:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="mobile.no" required>
+</td>
+<td>
+<b>Phone No:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ph.no">
+</td>
+</tr>
+<tr>
+<td>
 <input type="Submit" Value="submit" action="/new.html">
-</form>
+</td>
+<td>
+<button>Cancle</button>
+</td>
+</form></center>
+</tr></table>
 </body>
 </html>
